@@ -2,9 +2,6 @@
 
   Express middlewere wrapper for handling .all() requests for [node](http://nodejs.org).
 
-  [![NPM Version][npm-image]][npm-url]
-  [![NPM Downloads][downloads-image]][downloads-url]
-
 ```js
 var express = require('express');
 var whereTo = require('whereto');
@@ -22,9 +19,9 @@ app.all('/form', whereTo({
 app.listen(8080)
 ```
 
-You can also add an additional options object to your whereTo call. These options will get passed as the 4th parameter in your express middleware.
+You can also add an options object to your whereTo call. These options will get passed as the 4th parameter in your express middleware.
 
-WhereTo allows you to pass in a functions as well. If you pass in a function it will be called directly, any options you provided will be delivered to the 4th paramter.
+WhereTo allows you to pass a function instead of an object describing your request methods. If you pass in a function it will be called directly, any options you provided will be delivered to the 4th parameter.
 
 ```js
 var express = require('express');
