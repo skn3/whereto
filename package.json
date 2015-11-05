@@ -1,6 +1,6 @@
 {
   "name": "whereto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Re-route express middleware based on request method",
   "main": "index.js",
   "repository": {
