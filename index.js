@@ -14,10 +14,14 @@ function Destinations(where, options, result) {
 		case 'object':
 			//route based on request method
 			result.push(function (req, res, next) {
-				if (typeof where[req.method] != 'function') {
+				var method = req.method.toLowerCase();
+				//check for error
+				if (typeof where[method] != 'function') {
 					throw(Error('WhereTo unknown request method ' + req.method));
 				}
-				return where[req.method](req, res, next, options);
+
+				//call it now!
+				return where[method](req, res, next, options);
 			});
 			break;
 
