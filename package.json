@@ -1,0 +1,25 @@
+{
+  "name": "whereto",
+  "version": "1.0.0",
+  "description": "Re-route express middleware based on request method",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skn3/whereto.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "request",
+    "method"
+  ],
+  "author": "Jonathan Pittock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skn3/whereto/issues"
+  },
+  "homepage": "https://github.com/skn3/whereto#readme"
+}
